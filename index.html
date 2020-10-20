@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>pizza form</title>
+    <link rel = "style sheet" href="style.css">
+    <meta name="author" content="David M">
+    <meta name="description" content="Big D's Pizza form">
+    <meta property = "og:image" content = "">
+    <meta property = "og:description" content = "Enter your Big D's pizza request here">
+    <meta property = "og:title" content = "Big D's Pizza form">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+
+
+<form action="data.json" method="POST"></form>
+
+<p style="font-family:Verdana, Geneva, Tahoma, sans-serif">Big D's pizzia! <br>
+    David, the best pizzia maker ever!<br>
+    come order your custom pizzia from the Big D!
+</p>
+
+
+    <section> 
+
+        <h2>Ordering info</h2>
+<p>come in an order at: 9125 Colonial Avenue Shelbyville, TN 37160 <br>
+    order on the phone at 623-000-0000<br>
+    or online here:</p>
+
+<form action="data.json" method="POST">
+
+        <fieldset>
+            <legend>What would you like to order?</legend>
+            <ul>
+                
+                <label for="username">Big D's pizza username:</label> 
+                <input type="username" name="Big D's pizza username" id="username" maxlength="30">
+<br>
+                <label for="password">password:</label>
+                <input type="password" name="Big D's pizza password" id="password" maxlenght="12">
+<br>
+</fieldset><br>
+<br>            <!-- login part -->
+<fieldset>
+        <p>What drink would you like?</p>
+                    <input type="radio" id="drink one" name="user.drink">
+                    <label for="drink one">coke</label>
+                    <input type="radio" id="drink two" name="user.drink">
+                    <label for="drink two">diet coke</label>
+                    <input type="radio" id="drink three" name="user.drink">
+                    <label for="drink three">sprite</label>
+                    <input type="radio" id="drink four" name="user.drink">
+                    <label for="drink four">water</label>
+                    <br>
+<!-- drinks --></fieldset>
+<fieldset><br>
+                    <p>what would you like on your pizza?</p>
+                        <input type="checkbox" id="pepperoni" name="toppings">
+                        <label for="pepperoni">pepperoni</label><br>
+                        <input type="checkbox" id="plain" name="toppings">
+                        <label for="plain">plain</label><br>
+                        <input type="checkbox" id="chicken" name="toppings">
+                        <label for="chicken">chicken</label><br>
+                        <input type="checkbox" id="sausage" name="toppings">
+                        <label for="sausage">sausage</label>
+<!-- pizzia toppings --></fieldset>
+<fieldset><br>
+                        <p>Is there any fancy instructions that you would like to unrealistically slow your order down with?</p>
+                        <label for="comments">your fancy instructions:</label>
+                        <textarea name="user.comment" id="comment" cols="20" rows="2"></textarea>
+            <br><br>
+                <button type="submit">place order</button>
+
+<p>how satisified are you with your last order? :( :| :)</p>
+<div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+            </ul>
+        </fieldset>
+
+    </section>
+
+</form>
+
+</body>
+</html>
